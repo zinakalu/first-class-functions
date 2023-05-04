@@ -7,4 +7,3 @@ def logger(msg):
 
 log_hi = logger("Hi!")
 log_hi()
-
