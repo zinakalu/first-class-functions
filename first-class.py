@@ -1,10 +1,22 @@
-def logger(msg):
-    
-    def log_message():
-        print("Log:", msg)
+def square(x):
+    return x*x
 
-    return log_message
+f = square
 
-log_hi = logger("Hi!")
-log_hi()
+print(square)
+print(f(5))
+
+def cube(x):
+    return x*x*x
+
+def my_map(func, arg_list):
+    result = []
+    for i in arg_list:
+        result.append(func(i))
+    return result
+
+
+squares = my_map(cube, [1,2,3,4,5])
+
+print(squares)
 
